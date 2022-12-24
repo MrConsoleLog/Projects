@@ -1,5 +1,10 @@
-var number = 12.45
+/*Mr. Console Log*/
+const darkmodeTrigger = document.getElementsByClassName("darkmode")
 
-document.getElementById("root").innerHTML = `
-<div>${number}</div>
-`
+for(let l of darkmodeTrigger){//util function
+    l.addEventListener('click',()=>{
+        //TODO dark mode toggle
+        //...
+
+    })
+}
