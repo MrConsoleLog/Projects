@@ -10,7 +10,7 @@ body{
     padding: 0;
     margin:auto;
 }
-.topBar ul a,.topBar ul a li{/*li and inside*/
+.topBar ul a, .topBar ul a li{/*li and inside*/
     display: inline-block;/*block allow box width and height -> inline property*/
     border-radius: 30px;width: 150px;
     text-decoration: none;
@@ -29,4 +29,73 @@ body{
     width: 0;height: 0;/*no set width and height*/
     position: relative;
     top:-45px;left:85%;/*adjust position*/
+}
+
+/* Jimmy banner CSS part */
+.banner {
+    position: relative;
+    max-height: 400px;
+    margin: auto;
+}
+
+.slidesHidden {
+    display: none;
+}
+
+/* arrow button style */
+.prev, .next {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 20px;
+}
+
+.next {
+    right: 0px;
+}
+
+.prev:hover, .next:hover {
+    color: rgb(218, 215, 215);
+}
+
+/* Project name style */
+.projectName { /*set the text into image*/
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    bottom: 5px;
+    position: absolute; 
+    width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px; /* top mergin and right mergin */
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block; /*block allow box width and height -> inline property*/
+    transition: background-color 0.6s ease;
+}
+
+.selecting, .dot:hover {
+    background-color: #868585;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* set image porperty transparnet from 0.4 to 1 within 1.5s */
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
