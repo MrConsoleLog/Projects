@@ -1,12 +1,14 @@
 /*Mr. Console Log*/
-const darkmodeTrigger = document.getElementsByClassName("darkmode")
+const toggleMode = () =>{
+    const darkmodeTrigger = document.getElementsByClassName("darkmode")
 
-for(let l of darkmodeTrigger){//util function
-    l.addEventListener('click',()=>{
-        //TODO dark mode toggle
-        //...
+    for(let l of darkmodeTrigger){//util function
+        l.addEventListener('click',()=>{
+            //TODO dark mode toggle
+            //...
 
-    })
+        })
+    }
 }
 
 /* Jimmy slideshow function */
